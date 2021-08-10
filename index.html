@@ -564,15 +564,30 @@
         <section class="contact ptb-100" id="contact">
             <div class="container">
                 <h2>Contact me</h2>
-                <form method="post" action="contact.php">
-	<label for="name">Name:</label>
-	<input type="text" class="text" name="cf_name" id="name" />
-	<label for="email">email:</label>
-	<input type="text" class="text" name="cf_email" id="email" />
-	<label for="text">Message:</label>
-	<textarea class="text" name="cf_message" id="message"></textarea>
-	<input type="submit" class="submit" value="Send" />
-</form>
+                <form id="basic-form" action="" method="post">
+                    <div class="contact-inner d-flex">
+                        <div class="input-block form-item">
+                            <label for="">First name</label>
+                            <input type="text" name="first name" required>
+                        </div>
+                        <div class="input-block form-item">
+                            <label for="">last name</label>
+                            <input type="text" name="last name" required>
+                        </div>
+                        <div class="input-block form-item">
+                            <label for="">Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="input-block form-item">
+                            <label for="">phone</label>
+                            <input type="text" name="phone" required>
+                        </div>
+
+                        <div class="textarea form-item">
+                            <label for="">Your message</label>
+                            <textarea name="" id="" required></textarea>
+                        </div>
+                        <div class="submit-btn form-item">
                             <button type="submit" value="submit" class="btn btn-blue"> Send message</button>
                         </div>
                 </form>
